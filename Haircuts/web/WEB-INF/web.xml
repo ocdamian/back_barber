@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <ejb-ref>
+        <ejb-ref-name>ServicioFacade</ejb-ref-name>
+        <ejb-ref-type>Session</ejb-ref-type>
+        <remote>Persistencia.ServicioFacadeRemote</remote>
+    </ejb-ref>
+    <ejb-ref>
+        <ejb-ref-name>VentaFacade</ejb-ref-name>
+        <ejb-ref-type>Session</ejb-ref-type>
+        <remote>Persistencia.VentaFacadeRemote</remote>
+    </ejb-ref>
+    <ejb-ref>
+        <ejb-ref-name>NegocioFacade</ejb-ref-name>
+        <ejb-ref-type>Session</ejb-ref-type>
+        <remote>Persistencia.NegocioFacadeRemote</remote>
+    </ejb-ref>
+    <ejb-ref>
+        <ejb-ref-name>ServicioFacade1</ejb-ref-name>
+        <ejb-ref-type>Session</ejb-ref-type>
+        <remote>Persistencia.ServicioFacadeRemote</remote>
+    </ejb-ref>
+    <ejb-ref>
+        <ejb-ref-name>UsuarioFacade</ejb-ref-name>
+        <ejb-ref-type>Session</ejb-ref-type>
+        <remote>Persistencia.UsuarioFacadeRemote</remote>
+    </ejb-ref>
+</web-app>
